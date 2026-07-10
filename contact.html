@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Panorama Events Pvt. Ltd.</title>
+  <meta name="description" content="Get in touch with Panorama Events in Nepalgunj. Book us for concerts, sound setups, and musical festivals. Phone: 980-4598906.">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Ionicons for modern icons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="brand-logo-link">
+        <img src="assets/logo.png" alt="Panorama Events Logo" class="brand-logo" id="nav-logo">
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="events.html" class="nav-link">Events</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        <li><a href="contact.html" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">Book Event</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header style="background: linear-gradient(to bottom, rgba(8, 8, 12, 0.4), rgba(8, 8, 12, 0.95)), url('assets/hero_singer_bg.jpg') center 12% / cover no-repeat; padding: 12rem 2rem 5rem; text-align: center;">
+    <div style="max-width: 800px; margin: 0 auto;">
+      <span class="hero-badge">Get in Touch</span>
+      <h1 style="font-size: clamp(2.2rem, 1.8rem + 3vw, 4rem); font-weight: 800; margin-bottom: 1rem;">Let's Create <span class="text-gradient">Noise</span></h1>
+      <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto; font-size: 1.1rem;">Have questions, booking requests, or sponsorship ideas? Contact our office in Nepalgunj.</p>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="contact-layout">
+      
+      <!-- Contact Info Details -->
+      <div class="contact-info">
+        <div>
+          <span class="section-subtitle">Reach Us</span>
+          <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">Office Information</h2>
+          <p>Stop by our office or call us directly for immediate support regarding tickets, booking dates, and sound equipment hire.</p>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">
+            <ion-icon name="pin-outline"></ion-icon>
+          </div>
+          <div class="info-details">
+            <h3>Head Office</h3>
+            <p>Nepalgunj, Banke, Lumbini Province, Nepal</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+          <div class="info-details">
+            <h3>Phone Call</h3>
+            <p><a href="tel:9804598906" style="color: var(--accent-red); font-weight: 600; font-size: 1.1rem;">980-4598906</a></p>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem;">Available 10:00 AM - 7:00 PM (Sunday to Friday)</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">
+            <ion-icon name="mail-outline"></ion-icon>
+          </div>
+          <div class="info-details">
+            <h3>Email Address</h3>
+            <p><a href="mailto:info@panoramaevents.com.np">info@panoramaevents.com.np</a></p>
+            <p><a href="mailto:booking@panoramaevents.com.np">booking@panoramaevents.com.np</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="glass-card contact-form">
+        <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem;">Send a Message</h3>
+        <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you for contacting Panorama Events! We will get back to you shortly.');">
+          <div class="form-group">
+            <label class="form-label" for="full-name">Full Name</label>
+            <input type="text" id="full-name" class="form-control" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address</label>
+            <input type="email" id="email" class="form-control" placeholder="name@example.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="subject">Subject</label>
+            <select id="subject" class="form-control" style="background-color: var(--bg-secondary); border-color: rgba(255,255,255,0.08);" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="booking">Event booking request</option>
+              <option value="sponsorship">Sponsorship opportunity</option>
+              <option value="artist">Artist performance inquiry</option>
+              <option value="general">General question</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Your Message</label>
+            <textarea id="message" class="form-control" placeholder="How can we help you?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Message</button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Map Wrapper -->
+    <!-- Centered near Soaltee Westend Premier Nepalgunj -->
+    <div class="map-wrapper">
+      <iframe src="https://maps.google.com/maps?q=Soaltee%20Westend%20Premier%20Nepalgunj&t=&z=14&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Panorama Events Logo" class="footer-logo">
+        <p>Nepalgunj's premier event organizing company, delivering high-end live concerts, sound production, and artist hospitality since day one.</p>
+      </div>
+      <div>
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="events.html">Concerts & Events</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Contact Office</h4>
+        <ul class="footer-links" style="gap: 1rem;">
+          <li style="display: flex; gap: 0.75rem; color: var(--text-secondary);">
+            <ion-icon name="pin-outline" style="font-size: 1.25rem; color: var(--accent-red); flex-shrink: 0;"></ion-icon>
+            Nepalgunj, Banke, Nepal
+          </li>
+          <li style="display: flex; gap: 0.75rem; color: var(--text-secondary);">
+            <ion-icon name="call-outline" style="font-size: 1.25rem; color: var(--accent-red); flex-shrink: 0;"></ion-icon>
+            <a href="tel:9804598906">980-4598906</a>
+          </li>
+          <li style="display: flex; gap: 0.75rem; color: var(--text-secondary);">
+            <ion-icon name="mail-outline" style="font-size: 1.25rem; color: var(--accent-red); flex-shrink: 0;"></ion-icon>
+            info@panoramaevents.com.np
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Panorama Events Pvt. Ltd. All rights reserved.</p>
+      <p style="font-size: 0.85rem; color: var(--text-muted);">
+        Developed By: <span style="color: var(--accent-red); font-weight: 600;">Trendmarg</span> | Developer: <span style="color: #ffffff; font-weight: 500;">Subaash Chhetri</span>
+      </p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/profile.php?id=61578772160936" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="https://www.instagram.com/panoramaeventsnp/" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="https://www.tiktok.com/@panorama.eventsnp" target="_blank" rel="noopener" class="social-icon" aria-label="TikTok"><ion-icon name="logo-tiktok"></ion-icon></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
